@@ -1,5 +1,7 @@
 # backstagemanagement
 
+## Tips
+Before you run this project, make sure you have run your mongodb server on your localhost!
 ## Project setup
 if you haven't installed vue-cli and nodemon, run these scripts.
 ```
