@@ -32,8 +32,13 @@
     },
     methods: {
       saveArticle() {
-        // 方便的双向绑定
-        console.log(this.article);
+        this.$http.post("article", this.article).then(res => {
+          this.$message({
+          message: '文章创建成功',
+          type: 'success'
+        });
+         this.$router.push("/article/index")
+        });
       }
     }
   }

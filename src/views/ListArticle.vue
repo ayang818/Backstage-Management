@@ -1,11 +1,11 @@
 <template>
     <div>
-        <el-table :data="tableData">
-        <el-table-column prop="date" label="日期" width="140">
+        <el-table :data="articlesData">
+        <el-table-column prop="title" label="标题" width="140">
         </el-table-column>
-        <el-table-column prop="name" label="姓名" width="120">
+        <el-table-column prop="body" label="内容" width="220">
         </el-table-column>
-        <el-table-column prop="address" label="地址">
+        <el-table-column prop="type" label="类别" width="80">
         </el-table-column>
         </el-table>
     </div>
@@ -14,14 +14,15 @@
 <script>
   export default {
     data() {
-      const item = {
-        date: '2018-8-18',
-        name: '杨丰畅',
-        address: '杭州电子科技大学'
-      };
       return {
-        tableData: Array(20).fill(item)
+       articlesData: []
       }
+    },
+    created(){
+        this.$http.get("article").then(res => {
+            this.articlesData = res.data
+            console.log(res.data+"hello")
+        })
     }
   };
 </script>
