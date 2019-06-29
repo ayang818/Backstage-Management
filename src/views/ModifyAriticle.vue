@@ -4,7 +4,7 @@
       <el-input v-model="article.title"></el-input>
   </el-form-item>
   <el-form-item label="文章内容" >
-    <el-input type="textarea" v-model="article.body"></el-input>
+    <el-input autosize="true" type="textarea" v-model="article.body"></el-input>
   </el-form-item>
     <el-form-item label="文章类别">
     <el-radio-group v-model="article.type">

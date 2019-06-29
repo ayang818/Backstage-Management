@@ -8,7 +8,7 @@ app.use(express.json())
 
 // 链接数据库
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://119.23.240.115:27017/element-admin",{
+mongoose.connect("mongodb://localhost:27017/blog-admin",{
     useCreateIndex: true,
     useFindAndModify: true,
     useNewUrlParser: true, 
@@ -56,6 +56,6 @@ app.delete("/api/article/:id", async (req, res) => {
     })
 })
 
-app.listen(3001, () => 
-    console.log("http://localhost:3001/")
+app.listen(3000, () => 
+    console.log("http://localhost:3000/")
 )
