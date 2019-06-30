@@ -26,6 +26,7 @@ const Article = mongoose.model("Article", new mongoose.Schema({
     }
 }))
 
+
 app.get("/", async (req, res) =>
     res.send("restful page"))
 
@@ -53,7 +54,7 @@ app.post("/api/article", async (req, res) => {
     res.send(articles)
 })
 
-// 删除文章(学习接受参数)
+// 删除文章(接受参数)
 app.delete("/api/article/:id", async (req, res) => {
     await Article.findByIdAndDelete(req.params.id)
     res.send({
