@@ -3,16 +3,9 @@
 ## Tips
 Before you run this project, make sure you have run your mongodb server on your localhost!
 ## Project setup
-if you haven't installed vue-cli and nodemon, run these scripts.
+Run the following command to install dependences.
 ```
-npm install -g @vue/cli
-
-npm i -g nodemon
-```
-then run this script in the root of the project 
----
-```
-npm i express@next mongoose cors
+npm install
 ```
 ---
 ### Compiles and hot-reloads for development
