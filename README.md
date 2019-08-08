@@ -34,3 +34,5 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+### Related
+[王者荣耀仿站](https://github.com/ayang818/KingOfGlory)， 其中有比较完善的后台管理系统。
