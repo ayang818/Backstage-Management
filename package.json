@@ -13,7 +13,7 @@
     "cors": "^2.8.5",
     "element-ui": "^2.4.5",
     "express": "^5.0.0-alpha.7",
-    "mongoose": "^5.6.2",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.1",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
